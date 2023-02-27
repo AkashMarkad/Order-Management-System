@@ -19,9 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/product_name"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textColor="@color/white"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"/>
 
@@ -109,21 +108,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ornament_details"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textColor="@color/white"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginEnd="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:id="@+id/purity"
@@ -134,12 +131,14 @@
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
-            <TextView
+
+            <EditText
                 android:id="@+id/purityValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_92_16"
+                android:hint="@string/_92_16"
                 android:textSize="20sp"
+                android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="135dp"/>
         </LinearLayout>
@@ -148,8 +147,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:id="@+id/purchaseWastage"
@@ -160,12 +158,13 @@
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/purchaseWastageValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_2_5"
+                android:hint="@string/_2_5"
                 android:textSize="20sp"
+                android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="20dp"/>
         </LinearLayout>
@@ -185,12 +184,13 @@
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/minStockValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_500_gms"
+                android:hint="@string/_500_gms"
                 android:textSize="20sp"
+                android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="100dp"/>
         </LinearLayout>
@@ -200,21 +200,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sales_details"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textColor="@color/white"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginEnd="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:id="@+id/wastageR"
@@ -225,12 +223,13 @@
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/wastageRValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_3"
+                android:hint="@string/_3"
                 android:textSize="20sp"
+                android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="60dp"/>
         </LinearLayout>
@@ -239,8 +238,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:id="@+id/WastageW"
@@ -251,12 +249,13 @@
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/wastageWValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_6"
+                android:hint="@string/_6"
                 android:textSize="20sp"
+                android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="55dp"/>
         </LinearLayout>
@@ -265,8 +264,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:id="@+id/makingRateR"
@@ -277,12 +275,13 @@
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/makingRateRValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_500_gms_r"
+                android:hint="@string/_500_gms_r"
                 android:textSize="20sp"
+                android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="25dp"/>
         </LinearLayout>
@@ -291,8 +290,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:id="@+id/makingRateW"
@@ -303,12 +301,13 @@
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/makingRateWValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_500_gms_w"
+                android:hint="@string/_500_gms_w"
                 android:textSize="20sp"
+                android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="20dp"/>
         </LinearLayout>
