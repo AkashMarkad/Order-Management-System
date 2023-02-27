@@ -12,8 +12,8 @@
         android:id="@+id/productName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Product Name"
-        android:textSize="30dp"
+        android:text="@string/product_name"
+        android:textSize="30sp"
         android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"/>
@@ -22,8 +22,8 @@
         android:id="@+id/checkBoxGroupProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Group Product"
-        android:textSize="20dp"
+        android:text="@string/group_product"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:layout_marginStart="20dp"
         />
@@ -42,8 +42,8 @@
                 android:id="@+id/radioBtnGold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gold"
-                android:textSize="20dp"
+                android:text="@string/gold"
+                android:textSize="20sp"
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
@@ -51,8 +51,8 @@
                 android:id="@+id/radioBtnSilver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Silver"
-                android:textSize="20dp"
+                android:text="@string/silver"
+                android:textSize="20sp"
                 android:textColor="@color/white"
                 android:paddingStart="20dp"/>
         </LinearLayout>
@@ -62,8 +62,8 @@
         android:id="@+id/category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Category"
-        android:textSize="20dp"
+        android:text="@string/category"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:layout_marginStart="20dp"/>
 
@@ -77,8 +77,8 @@
             android:id="@+id/design"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Design"
-            android:textSize="20dp"
+            android:text="@string/design"
+            android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginEnd="20dp"/>
 
@@ -86,8 +86,8 @@
             android:id="@+id/HSN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HSN"
-            android:textSize="20dp"
+            android:text="@string/hsn"
+            android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginStart="20dp"/>
     </LinearLayout>

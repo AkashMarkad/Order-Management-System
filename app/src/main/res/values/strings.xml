@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Order-Management-System</string>
+    <string name="product_name">Product Name</string>
+    <string name="group_product">Group Product</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="category">Category</string>
+    <string name="design">Design</string>
+    <string name="hsn">HSN</string>
 </resources>
