@@ -5,92 +5,338 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/purple_700"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/productName"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/product_name"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"/>
+        android:orientation="vertical"
+        android:background="@color/purple_700">
 
-    <CheckBox
-        android:id="@+id/checkBoxGroupProduct"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/group_product"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:layout_marginStart="20dp"
-        />
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp">
+        <CheckBox
+            android:id="@+id/checkBoxGroupProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group_product"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/RGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBtnGold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="40dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioBtnSilver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/silver"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
 
-            <RadioButton
-                android:id="@+id/radioBtnGold"
+            <TextView
+                android:id="@+id/design"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/gold"
+                android:text="@string/design"
                 android:textSize="20sp"
                 android:textColor="@color/white"
                 android:layout_marginEnd="20dp"/>
 
-            <RadioButton
-                android:id="@+id/radioBtnSilver"
+            <TextView
+                android:id="@+id/HSN"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/silver"
+                android:text="@string/hsn"
                 android:textSize="20sp"
                 android:textColor="@color/white"
-                android:paddingStart="20dp"/>
+                android:layout_marginStart="20dp"/>
         </LinearLayout>
-    </RadioGroup>
 
-    <TextView
-        android:id="@+id/category"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/category"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/ornamentDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ornament_details"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/purity"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/purityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_92_16"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="135dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/purchaseWastage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/purchase_wastage"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/purchaseWastageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_5"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/minStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/min_stock"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/minStockValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_500_gms"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="100dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/salesDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sales_details"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/wastageR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wastage_r"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/wastageRValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="60dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/WastageW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wastage_w"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/wastageWValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_6"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="55dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/makingRateR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/making_rate_r"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/makingRateRValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_500_gms_r"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/makingRateW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/making_rate_w"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/makingRateWValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_500_gms_w"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginStart="20dp">
+        android:layout_marginTop="50dp">
 
-        <TextView
-            android:id="@+id/design"
+        <Button
+            android:id="@+id/btnNew"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/design"
+            android:text="@string/_new"
             android:textSize="20sp"
-            android:textColor="@color/white"
-            android:layout_marginEnd="20dp"/>
-
-        <TextView
-            android:id="@+id/HSN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hsn"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:layout_marginStart="20dp"/>
+
+        <Button
+            android:id="@+id/btnSaveAndProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_amp_proceed"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"/>
+
     </LinearLayout>
 
-
 </LinearLayout>
+
