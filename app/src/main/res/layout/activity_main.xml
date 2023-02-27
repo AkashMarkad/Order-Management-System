@@ -1,18 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_700"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxGroupProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Group Product"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtnGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnSilver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silver"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:paddingStart="20dp"/>
+        </LinearLayout>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:id="@+id/design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Design"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/HSN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HSN"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
