@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/purple_700">
+        android:background="@drawable/shape">
 
         <TextView
             android:id="@+id/productName"
@@ -20,7 +20,9 @@
             android:layout_height="wrap_content"
             android:text="@string/product_name"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:textColor="@color/white"
+            android:layout_marginTop="35dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"/>
 
@@ -45,7 +47,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <RadioButton
                     android:id="@+id/radioBtnGold"
@@ -109,6 +112,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ornament_details"
             android:textSize="25sp"
+            android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
             android:layout_marginTop="10dp"
@@ -202,6 +206,7 @@
             android:text="@string/sales_details"
             android:textSize="25sp"
             android:textColor="@color/white"
+            android:textStyle="bold"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
@@ -317,7 +322,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:gravity="center"
+        android:layout_marginTop="12dp">
 
         <Button
             android:id="@+id/btnNew"
@@ -325,7 +331,8 @@
             android:layout_height="wrap_content"
             android:text="@string/_new"
             android:textSize="20sp"
-            android:layout_marginStart="20dp"/>
+            android:backgroundTint="@color/violet"
+            android:layout_marginEnd="12dp"/>
 
         <Button
             android:id="@+id/btnSaveAndProceed"
@@ -333,7 +340,7 @@
             android:layout_height="wrap_content"
             android:text="@string/save_amp_proceed"
             android:textSize="20sp"
-            android:layout_marginStart="20dp"/>
+            android:backgroundTint="@color/violet"/>
 
     </LinearLayout>
 
