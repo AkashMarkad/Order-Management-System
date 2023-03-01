@@ -25,4 +25,12 @@
     <string name="_500_gms_w">500 / GMS</string>
     <string name="_new">New</string>
     <string name="save_amp_proceed"><![CDATA[Save & Proceed]]></string>
+    <string name="edit">Edit</string>
+    <string name="qr_code">QR-Code</string>
+    <string name="symbol_bar">|</string>
+    <string name="g_wt">G. Wt</string>
+    <string name="less_wt">Less Wt</string>
+    <string name="net_wt">Net Wt</string>
+    <string name="size">Size</string>
+    <string name="print_qr">Print QR</string>
 </resources>
