@@ -14,17 +14,30 @@
         android:orientation="vertical"
         android:background="@drawable/shape">
 
-        <TextView
-            android:id="@+id/productName"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/product_name"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_marginTop="35dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"/>
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/product_name"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/main_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_more" />
+
+        </LinearLayout>
 
         <CheckBox
             android:id="@+id/checkBoxGroupProduct"
@@ -106,6 +119,12 @@
                 android:layout_marginStart="20dp"/>
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/orange"/>
+
         <TextView
             android:id="@+id/ornamentDetails"
             android:layout_width="match_parent"
@@ -115,7 +134,7 @@
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"/>
 
@@ -200,6 +219,12 @@
                 android:layout_marginStart="100dp"/>
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/orange"/>
+
         <TextView
             android:id="@+id/salesDetails"
             android:layout_width="match_parent"
@@ -239,6 +264,7 @@
                 android:textColor="@color/white"
                 android:layout_marginStart="60dp"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -322,10 +348,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="12dp">
+        android:gravity="center">
 
         <Button
             android:id="@+id/btnNew"
