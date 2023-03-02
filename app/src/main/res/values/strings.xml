@@ -33,4 +33,18 @@
     <string name="net_wt">Net Wt</string>
     <string name="size">Size</string>
     <string name="print_qr">Print QR</string>
+    <string name="party_type">Party Type</string>
+    <string name="access_app">Access App</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="pan">PAN</string>
+    <string name="gst">GST</string>
+    <string name="credit_days">Credit Days</string>
+    <string name="reference">Reference</string>
+    <string name="e_mail">E-mail</string>
+    <string name="contact_no">Contact No</string>
+    <string name="address">Address</string>
+    <string name="party_name">Party Name</string>
+    <string name="save">Save</string>
+    <string name="proceed">Proceed</string>
+    <string name="exit">Exit</string>
 </resources>

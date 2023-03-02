@@ -18,18 +18,17 @@
             android:layout_margin="15dp"
             android:text="@string/product_name"
             android:textColor="@color/white"
-            android:textSize="28dp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <Button
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-
             android:backgroundTint="@color/violet"
             android:text="@string/edit"
             android:textAllCaps="false"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -52,14 +51,14 @@
                 android:layout_marginRight="10dp"
                 android:text="@string/qr_code"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/symbol_bar"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/g_wt"
@@ -69,14 +68,14 @@
                 android:layout_marginRight="10dp"
                 android:text="@string/g_wt"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/symbol_bar"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/less_wt"
@@ -86,14 +85,14 @@
                 android:layout_marginRight="10dp"
                 android:text="@string/less_wt"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/symbol_bar"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/net_wt"
@@ -103,14 +102,14 @@
                 android:layout_marginRight="10dp"
                 android:text="@string/net_wt"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/symbol_bar"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,14 +124,14 @@
                 android:layout_marginRight="10dp"
                 android:text="@string/size"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/symbol_bar"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/huid"
@@ -141,7 +140,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="HUID"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -161,7 +160,7 @@
                 android:text="@string/edit"
                 android:gravity="right"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -170,7 +169,7 @@
                 android:gravity="center"
                 android:text="@string/symbol_bar"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/print_qr"
@@ -180,12 +179,9 @@
                 android:gravity="right"
                 android:text="@string/print_qr"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
         </LinearLayout>
-
-
-
 
     </LinearLayout>
 

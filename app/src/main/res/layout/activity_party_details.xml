@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PartyDetailsActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/violet"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ip_party_type"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:hint="@string/party_type"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_party_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            android:hint="@string/party_name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_address"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="textPostalAddress"
+            android:textColorHint="@color/white"
+            android:hint="@string/address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_contact_no"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:textColorHint="@color/white"
+            android:hint="@string/contact_no"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_email"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/white"
+            android:hint="@string/e_mail"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_reference"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:hint="@string/reference"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_credit_days"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:hint="@string/credit_days"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_GST"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:maxLength="15"
+            android:textColorHint="@color/white"
+            android:hint="@string/gst"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_PAN"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:maxLength="10"
+            android:textColorHint="@color/white"
+            android:hint="@string/pan"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ip_branch_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:textColorHint="@color/white"
+            android:hint="@string/branch_name"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_access_app"
+            android:layout_marginTop="5dp"
+            android:text="@string/access_app"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/violet"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proceed"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/violet"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/violet"
+            android:layout_marginEnd="12dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
