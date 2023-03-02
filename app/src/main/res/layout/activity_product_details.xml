@@ -25,6 +25,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/buttonEdit"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
@@ -164,6 +165,7 @@
 
 
             <TextView
+                android:id="@+id/txtViewEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -182,7 +184,7 @@
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/print_qr"
+                android:id="@+id/printQr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
