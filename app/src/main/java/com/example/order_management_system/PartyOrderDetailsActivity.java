@@ -2,6 +2,7 @@ package com.example.order_management_system;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,8 @@ public class PartyOrderDetailsActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PartyOrderDetailsActivity.this , "Save button clicked" , Toast.LENGTH_SHORT).show();
+//                Toast.makeText(PartyOrderDetailsActivity.this , "Save button clicked" , Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(PartyOrderDetailsActivity.this,Vendor_List.class));
             }
         });
 

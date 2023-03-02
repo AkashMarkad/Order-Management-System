@@ -1,5 +1,5 @@
 <resources>
-<!--    Figure 1 String Values -->
+    <!--    Figure 1 String Values -->
     <string name="app_name">Order-Management-System</string>
     <string name="product_name">Product Name</string>
     <string name="group_product">Group Product</string>
@@ -27,7 +27,7 @@
     <string name="_new">New</string>
     <string name="save_amp_proceed"><![CDATA[Save & Proceed]]></string>
 
-<!--    Figure 3 String Values-->
+    <!--    Figure 3 String Values-->
     <string name="edit">Edit</string>
     <string name="qr_code">QR-Code</string>
     <string name="symbol_bar">|</string>
@@ -37,7 +37,7 @@
     <string name="size">Size</string>
     <string name="print_qr">Print QR</string>
 
-<!--    Figure 4 String Values-->
+    <!--    Figure 4 String Values-->
     <string name="party_type">Party Type</string>
     <string name="access_app">Access App</string>
     <string name="branch_name">Branch Name</string>
@@ -52,5 +52,8 @@
     <string name="save">Save</string>
     <string name="proceed">Proceed</string>
     <string name="exit">Exit</string>
+
+<!--    Figure 6 String Values-->
+    <string name="vendor_list">Vendor List</string>
 
 </resources>
