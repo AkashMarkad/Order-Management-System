@@ -27,6 +27,20 @@
     <string name="_new">New</string>
     <string name="save_amp_proceed"><![CDATA[Save & Proceed]]></string>
 
+    <!--    Figure 2 String Values -->
+    <string name="product_name_amp_qr_code"><![CDATA[Product Name & QR Code]]></string>
+    <string name="quantity">QUANTITY</string>
+    <string name="value">Value</string>
+    <string name="weight_gms">WEIGHT (GMS)</string>
+    <string name="less_weight_gms">LESS WEIGHT (GMS)</string>
+    <string name="add_weight_gms">ADD WEIGHT (GMS)</string>
+    <string name="net_weight_gms">Net WEIGHT (GMS)</string>
+    <string name="sale_less_weight_gms">Sale LESS WEIGHT (GMS)</string>
+    <string name="item_size">ITEM SIZE</string>
+    <string name="hallmark">HALLMARK</string>
+    <string name="camera">Camera</string>
+    <string name="gallary">Gallary</string>
+
     <!--    Figure 3 String Values-->
     <string name="edit">Edit</string>
     <string name="qr_code">QR-Code</string>
@@ -53,7 +67,9 @@
     <string name="proceed">Proceed</string>
     <string name="exit">Exit</string>
 
-<!--    Figure 6 String Values-->
+    <!--    Figure 6 String Values-->
     <string name="vendor_list">Vendor List</string>
+
+
 
 </resources>

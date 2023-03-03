@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         saveAndProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,ProductDetailsActivity.class));
+                startActivity(new Intent(MainActivity.this,ProductNameAndQRCode.class));
             }
         });
     }
