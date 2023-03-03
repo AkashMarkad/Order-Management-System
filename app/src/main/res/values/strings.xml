@@ -69,7 +69,7 @@
 
     <!--    Figure 6 String Values-->
     <string name="vendor_list">Vendor List</string>
-
+    <string name="customer_list">Customer List</string>
 
 
 </resources>
