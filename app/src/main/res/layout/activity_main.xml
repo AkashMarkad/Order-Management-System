@@ -35,6 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
+                android:clickable="true"
                 android:src="@drawable/ic_more" />
 
         </LinearLayout>
@@ -69,6 +70,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/gold"
                     android:textSize="20sp"
+                    android:checked="false"
                     android:textColor="@color/white"
                     android:layout_marginEnd="40dp"/>
 
@@ -77,6 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/silver"
+                    android:checked="false"
                     android:textSize="20sp"
                     android:textColor="@color/white"/>
             </LinearLayout>
