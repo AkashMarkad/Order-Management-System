@@ -71,5 +71,12 @@
     <string name="vendor_list">Vendor List</string>
     <string name="customer_list">Customer List</string>
 
+<string-array name="partyType">
+    <item>Type 1</item>
+    <item>Type 2</item>
+    <item>Type 3</item>
+    <item>Type 4</item>
+</string-array>
+
 
 </resources>

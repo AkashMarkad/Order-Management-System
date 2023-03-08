@@ -26,7 +26,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         Edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ProductDetailsActivity.this,PartyDetailsActivity.class));
+                startActivity(new Intent(ProductDetailsActivity.this,MainActivity.class));
             }
         });
     }
