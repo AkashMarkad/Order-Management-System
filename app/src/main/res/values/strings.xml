@@ -70,8 +70,9 @@
     <!--    Figure 6 String Values-->
     <string name="vendor_list">Vendor List</string>
     <string name="customer_list">Customer List</string>
+    <string name="edit_or_print_qr">Edit | Print QR</string>
 
-<string-array name="partyType">
+    <string-array name="partyType">
     <item>Type 1</item>
     <item>Type 2</item>
     <item>Type 3</item>

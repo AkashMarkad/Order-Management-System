@@ -45,156 +45,192 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/gridView1"
         android:background="@color/violet"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:gravity="center"
+        android:columnWidth="150dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/qrcode1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:text="@string/qr_code"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/symbol_bar"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/g_wt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/g_wt"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/symbol_bar"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/less_wt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/less_wt"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/symbol_bar"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/net_wt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/net_wt"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/symbol_bar"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/size"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:text="@string/size"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/symbol_bar"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/huid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="HUID"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="right"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="25dp"
-            android:paddingLeft="96dp">
+            android:background="@color/violet"
+            android:gravity="right"
+            android:padding="15dp">
 
-
-            <TextView
-                android:id="@+id/txtViewEdit"
-                android:layout_width="match_parent"
+            <Button
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/edit"
-                android:gravity="right"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/symbol_bar"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/printQr"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="right"
-                android:text="@string/print_qr"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:text="@string/edit_or_print_qr"
+                android:textSize="20dp"
+                android:backgroundTint="@color/violet"
+                android:textAllCaps="false"
+                android:id="@+id/editOrPrintQR"/>
 
         </LinearLayout>
 
     </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/violet"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="20dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/qrcode1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="@string/qr_code"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/symbol_bar"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/g_wt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="@string/g_wt"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/symbol_bar"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/less_wt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="@string/less_wt"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/symbol_bar"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/net_wt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="@string/net_wt"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/symbol_bar"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/size"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="@string/size"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/symbol_bar"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/huid"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="HUID"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingTop="25dp"-->
+<!--            android:paddingLeft="96dp">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtViewEdit"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/edit"-->
+<!--                android:gravity="right"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/symbol_bar"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/printQr"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="right"-->
+<!--                android:text="@string/print_qr"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
 
 </LinearLayout>

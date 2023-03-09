@@ -50,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/value"
                 android:textSize="20sp"
+                android:inputType="number"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="150dp"/>
@@ -212,6 +213,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/value"
                 android:textSize="20sp"
+                android:inputType="text"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="153dp"/>
@@ -239,6 +241,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/value"
                 android:textSize="20sp"
+                android:inputType="text"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:layout_marginStart="139dp"/>
