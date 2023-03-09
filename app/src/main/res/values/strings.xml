@@ -14,16 +14,13 @@
     <string name="purchase_wastage">Purchase Wastage</string>
     <string name="_2_5">2.5 %</string>
     <string name="min_stock">Min Stock</string>
-    <string name="_500_gms">500 GMS</string>
     <string name="sales_details">Sales Details</string>
     <string name="wastage_r">Wastage (R)</string>
     <string name="_3">3 %</string>
     <string name="wastage_w">Wastage (W)</string>
     <string name="_6">6 %</string>
     <string name="making_rate_r">Making Rate (R)</string>
-    <string name="_500_gms_r">500 / GMS</string>
     <string name="making_rate_w">Making Rate (W)</string>
-    <string name="_500_gms_w">500 / GMS</string>
     <string name="_new">New</string>
     <string name="save_amp_proceed"><![CDATA[Save & Proceed]]></string>
 
@@ -73,11 +70,49 @@
     <string name="edit_or_print_qr">Edit | Print QR</string>
 
     <string-array name="partyType">
-    <item>Type 1</item>
-    <item>Type 2</item>
-    <item>Type 3</item>
-    <item>Type 4</item>
-</string-array>
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+        <item>Type 4</item>
+    </string-array>
+
+    <string-array name="Category">
+        <item>select category</item>
+        <item>category-1</item>
+        <item>category-2</item>
+        <item>category-3</item>
+    </string-array>
+
+    <string-array name="Design">
+        <item>select Design</item>
+        <item>design-1</item>
+        <item>design-2</item>
+        <item>design-3</item>
+        <item>design-4</item>
+    </string-array>
+
+    <string-array name="HSN">
+        <item>select HSN</item>
+        <item>HSN-1</item>
+        <item>HSN-2</item>
+        <item>HSN-3</item>
+        <item>hsn-4</item>
+    </string-array>
+
+    <string-array name="minStockUnits">
+        <item>gms</item>
+        <item>kg</item>
+    </string-array>
+
+    <string-array name="MakingRateRUnits">
+        <item>gms</item>
+        <item>kg</item>
+    </string-array>
+
+    <string-array name="MakingRateWUnits">
+        <item>gms</item>
+        <item>kg</item>
+    </string-array>
 
 
 </resources>

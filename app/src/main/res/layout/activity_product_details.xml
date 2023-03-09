@@ -67,13 +67,23 @@
             android:padding="15dp">
 
             <Button
+                android:id="@+id/edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/edit_or_print_qr"
+                android:text="@string/edit"
                 android:textSize="20dp"
                 android:backgroundTint="@color/violet"
                 android:textAllCaps="false"
-                android:id="@+id/editOrPrintQR"/>
+                />
+
+            <Button
+                android:id="@+id/printQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/print_qr"
+                android:textSize="20dp"
+                android:backgroundTint="@color/violet"
+                android:textAllCaps="false" />
 
         </LinearLayout>
 

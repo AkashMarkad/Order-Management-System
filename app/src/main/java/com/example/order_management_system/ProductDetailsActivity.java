@@ -16,8 +16,8 @@ import java.util.HashMap;
 
 public class ProductDetailsActivity extends AppCompatActivity {
 
-    Button Edit;
-    TextView editOrPrintQR;
+    Button Edit1, Edit2;
+    TextView PrintQR;
     GridView gridView1;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,22 +27,31 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         gridView1 = findViewById(R.id.gridView1);
 
-        Edit = findViewById(R.id.buttonEdit);
-        editOrPrintQR = findViewById(R.id.editOrPrintQR);
+        Edit1 = findViewById(R.id.buttonEdit);
+        Edit2 = findViewById(R.id.edit);
+        PrintQR = findViewById(R.id.printQR);
 
-        Edit.setOnClickListener(new View.OnClickListener() {
+        Edit1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProductDetailsActivity.this,MainActivity.class));
             }
         });
 
-        editOrPrintQR.setOnClickListener(new View.OnClickListener() {
+        Edit2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProductDetailsActivity.this, ProductNameAndQRCode.class));
             }
         });
+        PrintQR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProductDetailsActivity.this, PartyDetailsActivity.class));
+            }
+        });
+
+
 
 
 
