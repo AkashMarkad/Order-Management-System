@@ -1,15 +1,19 @@
 package com.example.order_management_system;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -89,5 +93,28 @@ public class ProductDetailsActivity extends AppCompatActivity {
         GridView gridView = findViewById(R.id.gridView1);
         gridView.setAdapter(adapter);
 
+    }
+
+    //Menu declaration
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.product_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if(id==R.id.p_item1){
+            Toast.makeText(getApplicationContext(),"clicked on product item 1", Toast.LENGTH_SHORT).show();
+        }
+        else if (id==R.id.p_item2) {
+            Toast.makeText(getApplicationContext(),"clicked on product item 2", Toast.LENGTH_SHORT).show();
+        }
+        else if (id==R.id.p_item3) {
+            Toast.makeText(getApplicationContext(),"clicked on product item 3", Toast.LENGTH_SHORT).show();
+        }
+        return true;
     }
 }

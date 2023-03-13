@@ -11,14 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/orange"
-        android:layout_marginTop="40dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/productName1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="20dp"
             android:text="@string/product_name"
             android:textColor="@color/white"
             android:textSize="28sp"
@@ -34,12 +34,6 @@
             android:textAllCaps="false"
             android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/product_detail_activity_more"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_more" />
 
     </LinearLayout>
 

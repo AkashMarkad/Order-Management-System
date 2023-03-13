@@ -1,5 +1,6 @@
 package com.example.order_management_system;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -8,6 +9,8 @@ import android.graphics.Color;
 import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -36,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         New = findViewById(R.id.btnNew);
         saveAndProceed = findViewById(R.id.btnSaveAndProceed);
-        moreOption = findViewById(R.id.main_more);
         GroupProduct = findViewById(R.id.checkBoxGroupProduct);
         RGroup = findViewById(R.id.RGroup);
         CategorySpinner = findViewById(R.id.categorySpinner);
@@ -46,12 +48,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         MakingRateRSpinner = findViewById(R.id.makingRateRUnits);
         MakingRateWSpinner = findViewById(R.id.makingRateWUnits);
 
-        moreOption.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"More Option clicked" , Toast.LENGTH_SHORT).show();
-            }
-        });
 
         New.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,4 +115,26 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
+    //Menu declaration
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if(id==R.id.item1){
+            Toast.makeText(getApplicationContext(),"clicked on item 1", Toast.LENGTH_SHORT).show();
+        }
+        else if (id==R.id.item2) {
+            Toast.makeText(getApplicationContext(),"clicked on item 2", Toast.LENGTH_SHORT).show();
+        }
+        else if (id==R.id.item3) {
+            Toast.makeText(getApplicationContext(),"clicked on item 3", Toast.LENGTH_SHORT).show();
+        }
+
+        return true;
+    }
 }
