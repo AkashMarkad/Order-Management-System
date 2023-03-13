@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         saveAndProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                onclickbuttonMethod(view);
                 startActivity(new Intent(MainActivity.this,ProductNameAndQRCode.class));
             }
         });
@@ -119,4 +120,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
+    public void onclickbuttonMethod(View v){
+        int selectedId = RGroup.getCheckedRadioButtonId();
+
+        if(selectedId==-1){
+            Toast.makeText(MainActivity.this,"Nothing selected", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            selectedRadioButton = findViewById(selectedId);
+            Toast.makeText(MainActivity.this,selectedRadioButton.getText(), Toast.LENGTH_SHORT).show();
+        }
+
+    }
 }
