@@ -20,7 +20,7 @@ public class ProductNameAndQRCode extends AppCompatActivity {
 
     // Define the pic id
     private static final int pic_id = 1001;
-    private static int RESULT_LOAD_IMAGE = 1;
+    private static final int RESULT_LOAD_IMAGE = 1;
     Button New , Savebtn , PrintQR;
     TextView camera , gallary;
     ImageView imageView;
@@ -98,7 +98,7 @@ public class ProductNameAndQRCode extends AppCompatActivity {
             imageView.setImageBitmap(photo);
         }
 
-        if (requestCode == 1) {
+        if (requestCode == RESULT_LOAD_IMAGE ) {
             final Bundle extras = data.getExtras();
             if (extras != null) {
                 //Get image
