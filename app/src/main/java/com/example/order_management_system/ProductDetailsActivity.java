@@ -51,10 +51,6 @@ public class ProductDetailsActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
         ArrayList<HashMap<String, String>> arrayList = new ArrayList<HashMap<String, String>>();
 
         HashMap<String, String> hashMap1 = new HashMap<String, String>();

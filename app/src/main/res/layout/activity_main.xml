@@ -41,29 +41,28 @@
 
         </LinearLayout>
 
-        <CheckBox
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
             android:id="@+id/checkBoxGroupProduct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/group_product"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            />
+            android:layout_marginEnd="20dp"/>
 
-        <RadioGroup
-            android:id="@+id/RGroup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp">
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/RGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/radioBtnGold"
@@ -71,20 +70,20 @@
                     android:layout_height="wrap_content"
                     android:text="@string/gold"
                     android:textSize="20sp"
-                    android:checked="false"
-                    android:textColor="@color/white"
-                    android:layout_marginEnd="40dp"/>
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioBtnSilver"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/silver"
-                    android:checked="false"
                     android:textSize="20sp"
                     android:textColor="@color/white"/>
-            </LinearLayout>
-        </RadioGroup>
+
+            </RadioGroup>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
