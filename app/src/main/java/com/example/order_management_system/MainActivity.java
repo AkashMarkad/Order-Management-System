@@ -52,9 +52,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         New.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
                 Toast.makeText(getApplicationContext(),"New Button Clicked" , Toast.LENGTH_SHORT).show();
             }
         });
+
+
 
         saveAndProceed.setOnClickListener(new View.OnClickListener() {
             @Override
