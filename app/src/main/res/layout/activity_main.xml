@@ -5,21 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:padding="@dimen/_8sdp"
         android:background="@color/violet">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <EditText
@@ -29,7 +38,7 @@
                 android:hint="@string/product_name"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="@dimen/_20ssp" />
 
         </LinearLayout>
 
@@ -43,9 +52,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/group_product"
-            android:textSize="20sp"
+            android:textSize="@dimen/_12ssp"
             android:textColor="@color/white"
-            android:layout_marginEnd="20dp"/>
+            android:layout_marginEnd="@dimen/_20sdp"/>
 
 
             <RadioGroup
@@ -59,8 +68,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/gold"
-                    android:textSize="20sp"
-                    android:layout_marginEnd="20dp"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:textColor="@color/white"/>
 
                 <RadioButton
@@ -68,15 +77,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/silver"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/_12ssp"
                     android:textColor="@color/white"/>
 
             </RadioGroup>
 
         </LinearLayout>
-
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,35 +93,29 @@
                 android:id="@+id/categorySpinner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="category-1"
-                android:textSize="20sp"
+                android:text="select category"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="@dimen/_10sdp"/>
 
             <Spinner
                 android:id="@+id/designSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:text="select design"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="@dimen/_10sdp"/>
 
-<!--            <TextView-->
-<!--                android:id="@+id/design"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/design"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:layout_marginEnd="20dp"/>-->
 
             <Spinner
                 android:id="@+id/hsnSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:text="select HSN"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="@dimen/_10sdp"/>
 
 <!--            <TextView-->
 <!--                android:id="@+id/HSN"-->
@@ -124,7 +124,7 @@
 <!--                android:text="@string/hsn"-->
 <!--                android:textSize="20sp"-->
 <!--                android:textColor="@color/white"-->
-<!--                android:layout_marginStart="20dp"/>-->
+<!--                android:layout_marginStart="@dimen/_20sdp"/>-->
         </LinearLayout>
 
         <View
@@ -138,7 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ornament_details"
-            android:textSize="25sp"
+            android:textSize="@dimen/_20ssp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center"
@@ -156,9 +156,9 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="@string/purity"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="@dimen/_20sdp"/>
 
             <EditText
                 android:id="@+id/purityValue"
@@ -167,8 +167,8 @@
                 android:hint="@string/_92_16"
                 android:inputType="numberDecimal"
                 android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="20sp" />
+                android:textColorHint="@color/off_white"
+                android:textSize="@dimen/_15ssp" />
         </LinearLayout>
 
         <LinearLayout
@@ -181,18 +181,18 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="@string/purchase_wastage"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="@dimen/_20sdp"/>
 
             <EditText
                 android:id="@+id/purchaseWastageValue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/_2_5"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15ssp"
                 android:inputType="numberDecimal"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/off_white"
                 android:textColor="@color/white"/>
         </LinearLayout>
 
@@ -206,17 +206,18 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="@string/min_stock"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="@dimen/_20sdp"/>
 
             <EditText
                 android:id="@+id/minStockValue"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="500"
-                android:textSize="20sp"
-                android:textColorHint="@color/white"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/_15ssp"
+                android:textColorHint="@color/off_white"
                 android:textColor="@color/white"/>
 
             <Spinner
@@ -224,8 +225,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="gms"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15sdp"
                 android:textColor="@color/white" />
+
         </LinearLayout>
 
         <View
@@ -239,7 +241,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sales_details"
-            android:textSize="25sp"
+            android:textSize="@dimen/_20ssp"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:gravity="center"
@@ -255,9 +257,9 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="@string/wastage_r"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="@dimen/_20sdp"/>
 
             <EditText
                 android:id="@+id/wastageRValue"
@@ -265,8 +267,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/_3"
                 android:inputType="numberDecimal"
-                android:textSize="20sp"
-                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textColorHint="@color/off_white"
                 android:textColor="@color/white"/>
         </LinearLayout>
 
@@ -280,8 +282,8 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="@string/wastage_w"
-                android:layout_marginEnd="20dp"
-                android:textSize="20sp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"/>
 
             <EditText
@@ -290,8 +292,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/_6"
                 android:inputType="numberDecimal"
-                android:textSize="20sp"
-                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textColorHint="@color/off_white"
                 android:textColor="@color/white"/>
         </LinearLayout>
 
@@ -305,25 +307,26 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="@string/making_rate_r"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="@dimen/_20sdp"/>
 
             <EditText
                 android:id="@+id/makingRateRValue"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="500"
-                android:textSize="20sp"
-                android:textColorHint="@color/white"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/_15ssp"
+                android:textColorHint="@color/off_white"
                 android:textColor="@color/white"/>
 
             <Spinner
                 android:id="@+id/makingRateRUnits"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="gms"
-                android:textSize="20sp"
+                android:text="select unit"
+                android:textSize="@dimen/_15sdp"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -337,56 +340,62 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="@string/making_rate_w"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="@dimen/_20sdp"/>
 
             <EditText
                 android:id="@+id/makingRateWValue"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="500"
-                android:textSize="20sp"
-                android:textColorHint="@color/white"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/_15ssp"
+                android:textColorHint="@color/off_white"
                 android:textColor="@color/white"/>
 
             <Spinner
                 android:id="@+id/makingRateWUnits"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="gms"
-                android:textSize="20sp"
+                android:text="select unit"
+                android:textSize="@dimen/_15sdp"
                 android:textColor="@color/white" />
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnNew"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/_new"
-            android:textSize="20sp"
-            android:textAllCaps="false"
-            android:backgroundTint="@color/violet"
-            android:layout_marginEnd="12dp"/>
+                <Button
+                    android:id="@+id/btnNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:backgroundTint="@color/violet"
+                    android:text="@string/_new"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
 
-        <Button
-            android:id="@+id/btnSaveAndProceed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/save_amp_proceed"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:backgroundTint="@color/violet"/>
+                <Button
+                    android:id="@+id/btnSaveAndProceed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/violet"
+                    android:text="@string/save_amp_proceed"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
 

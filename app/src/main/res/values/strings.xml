@@ -77,14 +77,14 @@
     </string-array>
 
     <string-array name="Category">
-        <item>select category</item>
+        <item>Select Category</item>
         <item>category-1</item>
         <item>category-2</item>
         <item>category-3</item>
     </string-array>
 
     <string-array name="Design">
-        <item>select Design</item>
+        <item>Select Design</item>
         <item>design-1</item>
         <item>design-2</item>
         <item>design-3</item>
@@ -92,24 +92,27 @@
     </string-array>
 
     <string-array name="HSN">
-        <item>select HSN</item>
+        <item>Select HSN</item>
         <item>HSN-1</item>
         <item>HSN-2</item>
         <item>HSN-3</item>
-        <item>hsn-4</item>
+        <item>HSN-4</item>
     </string-array>
 
     <string-array name="minStockUnits">
+        <item>Unit</item>
         <item>gms</item>
         <item>kg</item>
     </string-array>
 
     <string-array name="MakingRateRUnits">
+        <item>Unit</item>
         <item>gms</item>
         <item>kg</item>
     </string-array>
 
     <string-array name="MakingRateWUnits">
+        <item>Unit</item>
         <item>gms</item>
         <item>kg</item>
     </string-array>
