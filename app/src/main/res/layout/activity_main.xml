@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -17,14 +17,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/violet"
         android:orientation="vertical"
-        android:padding="@dimen/_8sdp"
-        android:background="@color/violet">
+        android:padding="@dimen/_8sdp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,8 +34,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/product_name"
-                android:textColorHint="@color/white"
                 android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:textSize="@dimen/_20ssp" />
 
         </LinearLayout>
@@ -51,10 +49,10 @@
             android:id="@+id/checkBoxGroupProduct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
             android:text="@string/group_product"
-            android:textSize="@dimen/_12ssp"
             android:textColor="@color/white"
-            android:layout_marginEnd="@dimen/_20sdp"/>
+            android:textSize="@dimen/_12ssp"/>
 
 
             <RadioGroup
@@ -67,18 +65,18 @@
                     android:id="@+id/radioBtnGold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/gold"
-                    android:textSize="@dimen/_12ssp"
                     android:layout_marginEnd="@dimen/_20sdp"
-                    android:textColor="@color/white"/>
+                    android:text="@string/gold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"/>
 
                 <RadioButton
                     android:id="@+id/radioBtnSilver"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/silver"
-                    android:textSize="@dimen/_12ssp"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"/>
 
             </RadioGroup>
 
@@ -93,29 +91,29 @@
                 android:id="@+id/categorySpinner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:text="select category"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginBottom="@dimen/_10sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <Spinner
                 android:id="@+id/designSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:text="select design"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginBottom="@dimen/_10sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
 
             <Spinner
                 android:id="@+id/hsnSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:text="select HSN"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginBottom="@dimen/_10sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
 <!--            <TextView-->
 <!--                android:id="@+id/HSN"-->
@@ -137,12 +135,12 @@
             android:id="@+id/ornamentDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ornament_details"
-            android:textSize="@dimen/_20ssp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:layout_marginTop="5dp"/>
+            android:text="@string/ornament_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"/>
 
 
 
@@ -153,12 +151,12 @@
 
             <TextView
                 android:id="@+id/purity"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
                 android:text="@string/purity"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="@dimen/_20sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <EditText
                 android:id="@+id/purityValue"
@@ -178,22 +176,22 @@
 
             <TextView
                 android:id="@+id/purchaseWastage"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
                 android:text="@string/purchase_wastage"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="@dimen/_20sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <EditText
                 android:id="@+id/purchaseWastageValue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/_2_5"
-                android:textSize="@dimen/_15ssp"
                 android:inputType="numberDecimal"
+                android:textColor="@color/white"
                 android:textColorHint="@color/off_white"
-                android:textColor="@color/white"/>
+                android:textSize="@dimen/_15ssp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -203,12 +201,12 @@
 
             <TextView
                 android:id="@+id/minStock"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
                 android:text="@string/min_stock"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="@dimen/_20sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <EditText
                 android:id="@+id/minStockValue"
@@ -216,17 +214,17 @@
                 android:layout_height="wrap_content"
                 android:hint="500"
                 android:inputType="numberDecimal"
-                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"
                 android:textColorHint="@color/off_white"
-                android:textColor="@color/white"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <Spinner
                 android:id="@+id/minStockUnits"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="gms"
-                android:textSize="@dimen/_15sdp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
 
         </LinearLayout>
 
@@ -240,12 +238,12 @@
             android:id="@+id/salesDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sales_details"
-            android:textSize="@dimen/_20ssp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:layout_marginTop="5dp"/>
+            android:text="@string/sales_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -254,12 +252,12 @@
 
             <TextView
                 android:id="@+id/wastageR"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
                 android:text="@string/wastage_r"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="@dimen/_20sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <EditText
                 android:id="@+id/wastageRValue"
@@ -267,9 +265,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/_3"
                 android:inputType="numberDecimal"
-                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"
                 android:textColorHint="@color/off_white"
-                android:textColor="@color/white"/>
+                android:textSize="@dimen/_15ssp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -279,12 +277,12 @@
 
             <TextView
                 android:id="@+id/WastageW"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
-                android:text="@string/wastage_w"
                 android:layout_marginEnd="@dimen/_20sdp"
-                android:textSize="@dimen/_15ssp"
-                android:textColor="@color/white"/>
+                android:text="@string/wastage_w"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"/>
 
             <EditText
                 android:id="@+id/wastageWValue"
@@ -292,9 +290,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/_6"
                 android:inputType="numberDecimal"
-                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"
                 android:textColorHint="@color/off_white"
-                android:textColor="@color/white"/>
+                android:textSize="@dimen/_15ssp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -304,12 +302,12 @@
 
             <TextView
                 android:id="@+id/makingRateR"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
                 android:text="@string/making_rate_r"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="@dimen/_20sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <EditText
                 android:id="@+id/makingRateRValue"
@@ -317,17 +315,17 @@
                 android:layout_height="wrap_content"
                 android:hint="500"
                 android:inputType="numberDecimal"
-                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"
                 android:textColorHint="@color/off_white"
-                android:textColor="@color/white"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <Spinner
                 android:id="@+id/makingRateRUnits"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="select unit"
-                android:textSize="@dimen/_15sdp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
         </LinearLayout>
 
         <LinearLayout
@@ -337,12 +335,12 @@
 
             <TextView
                 android:id="@+id/makingRateW"
-                android:layout_width="170dp"
+                android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
                 android:text="@string/making_rate_w"
-                android:textSize="@dimen/_15ssp"
                 android:textColor="@color/white"
-                android:layout_marginEnd="@dimen/_20sdp"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <EditText
                 android:id="@+id/makingRateWValue"
@@ -350,17 +348,17 @@
                 android:layout_height="wrap_content"
                 android:hint="500"
                 android:inputType="numberDecimal"
-                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"
                 android:textColorHint="@color/off_white"
-                android:textColor="@color/white"/>
+                android:textSize="@dimen/_15ssp"/>
 
             <Spinner
                 android:id="@+id/makingRateWUnits"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="select unit"
-                android:textSize="@dimen/_15sdp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
         </LinearLayout>
     </LinearLayout>
 

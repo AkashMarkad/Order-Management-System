@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".PartyDetailsActivity">
 
 
@@ -22,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@color/violet"
-                android:padding="20dp">
+                android:padding="@dimen/_10sdp">
 
 
                 <LinearLayout
@@ -31,12 +32,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
+                        android:layout_width="@dimen/_100sdp"
                         android:layout_height="match_parent"
                         android:text="@string/party_type"
                         android:textColor="@color/white"
                         android:layout_marginTop="10dp"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
 
                     <Spinner
@@ -44,7 +45,7 @@
                         android:layout_height="match_parent"
                         android:id="@+id/partyTypeSpinner"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:text="@string/party_type" />
 
                 </LinearLayout>
@@ -55,19 +56,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/party_name"
                         android:textColor="@color/white"
                         android:layout_marginTop="10dp"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_party_name"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="text"/>
                 </LinearLayout>
 
@@ -77,19 +78,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/address"
                         android:textColor="@color/white"
                         android:layout_marginTop="10dp"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_address"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="text" />
 
                 </LinearLayout>
@@ -100,19 +101,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/contact_no"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/white"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_contact_no"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="phone"/>
                 </LinearLayout>
 
@@ -122,19 +123,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/e_mail"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/white"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_email"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="text"/>
                 </LinearLayout>
 
@@ -144,19 +145,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/reference"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/white"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_reference"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="text" />
                 </LinearLayout>
 
@@ -166,19 +167,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/credit_days"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/white"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_credit_days"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="number"/>
                 </LinearLayout>
 
@@ -188,19 +189,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/gst"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/white"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_GST"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="text"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
                         android:maxLength="15"/>
@@ -213,19 +214,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/pan"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/white"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_PAN"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="text"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
                         android:maxLength="10"/>
@@ -237,31 +238,31 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
                         android:text="@string/branch_name"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/white"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/_15ssp"/>
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:id="@+id/ip_branch_name"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/_15ssp"
                         android:inputType="text"/>
 
                 </LinearLayout>
 
 
                 <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:id="@+id/checkbox_access_app"
                     android:layout_marginTop="5dp"
                     android:text="@string/access_app"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/_15ssp"
                     android:textColor="@color/white"/>
 
             </LinearLayout>
@@ -270,17 +271,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:gravity="center|bottom"
-                android:layout_marginTop="20dp"
-                android:paddingBottom="30dp">
+                android:gravity="center"
+                android:layout_marginTop="20dp">
 
                 <Button
                     android:id="@+id/btnSave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/save"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/_15ssp"
                     android:textAllCaps="false"
+                    android:textColor="@color/white"
                     android:backgroundTint="@color/violet"
                     android:layout_marginEnd="12dp"/>
 
@@ -288,29 +289,27 @@
                     android:id="@+id/btnProceed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/proceed"
-                    android:textSize="20sp"
-                    android:textAllCaps="false"
+                    android:layout_marginEnd="12dp"
                     android:backgroundTint="@color/violet"
-                    android:layout_marginEnd="12dp"/>
+                    android:text="@string/proceed"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
 
                 <Button
                     android:id="@+id/btnExit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/exit"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/_15ssp"
                     android:textAllCaps="false"
-                    android:backgroundTint="@color/violet"
-                    android:layout_marginEnd="12dp"/>
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/violet"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
-
-
-
 
 </LinearLayout>

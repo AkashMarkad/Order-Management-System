@@ -13,7 +13,7 @@
         android:id="@+id/product_detail_title"
         android:layout_margin="5dp"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="@dimen/_13ssp"
         android:textStyle="normal"/>
 
     <ImageView
@@ -28,7 +28,7 @@
         android:id="@+id/product_detail_value"
         android:layout_margin="5dp"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="@dimen/_13ssp"
         android:textStyle="normal"/>
 
 </LinearLayout>

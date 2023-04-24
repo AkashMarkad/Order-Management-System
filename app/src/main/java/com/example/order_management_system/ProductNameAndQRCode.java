@@ -22,7 +22,7 @@ public class ProductNameAndQRCode extends AppCompatActivity {
     private static final int pic_id = 1001;
     private static final int RESULT_LOAD_IMAGE = 1;
     Button New , Savebtn , PrintQR;
-    TextView camera , gallary;
+    TextView camera , gallery;
     ImageView imageView;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -33,7 +33,7 @@ public class ProductNameAndQRCode extends AppCompatActivity {
         Savebtn = findViewById(R.id.btnSaveProduct);
         PrintQR = findViewById(R.id.btnPrintQR);
         camera = findViewById(R.id.txtViewCamera);
-        gallary = findViewById(R.id.txtViewGallary);
+        gallery = findViewById(R.id.txtViewGallery);
         imageView = findViewById(R.id.imageView);
         imageView.setVisibility(View.VISIBLE);
 
@@ -46,7 +46,7 @@ public class ProductNameAndQRCode extends AppCompatActivity {
             }
         });
 
-        gallary.setOnClickListener(new View.OnClickListener() {
+        gallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 //                Intent intent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);

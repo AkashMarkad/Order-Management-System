@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Shop 1"
-        android:textSize="25sp"
+        android:textSize="@dimen/_20ssp"
         android:textColor="@color/white"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
@@ -28,7 +28,7 @@
         android:text="4 OP"
         android:layout_weight="1"
         android:textColor="@color/white"
-        android:textSize="25sp">
+        android:textSize="@dimen/_20ssp">
         <requestFocus />
     </TextView>
 
