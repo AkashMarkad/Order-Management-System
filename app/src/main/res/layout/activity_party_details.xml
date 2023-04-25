@@ -273,7 +273,8 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_30sdp">>
 
                 <Button
                     android:id="@+id/btnSave"
