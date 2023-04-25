@@ -75,7 +75,6 @@
                         android:id="@+id/cr_amount_value"
                         android:layout_width="200dp"
                         android:layout_height="match_parent"
-                        android:gravity="center"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15ssp" />
 
@@ -112,7 +111,6 @@
                     <EditText
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:textSize="@dimen/_15ssp"
                         android:textColor="@color/white"
                         android:id="@+id/dr_amount_value"/>
@@ -150,7 +148,6 @@
                     <EditText
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:textSize="@dimen/_15ssp"
                         android:textColor="@color/white"
                         android:id="@+id/cr_gold_value"/>
@@ -188,7 +185,6 @@
                     <EditText
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:textSize="@dimen/_15ssp"
                         android:textColor="@color/white"
                         android:id="@+id/dr_gold_value"/>
@@ -226,7 +222,6 @@
                     <EditText
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:textSize="@dimen/_15ssp"
                         android:textColor="@color/white"
                         android:id="@+id/cr_silver_value"/>
@@ -264,7 +259,6 @@
                     <EditText
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:textSize="@dimen/_15ssp"
                         android:textColor="@color/white"
                         android:id="@+id/dr_silver_value"/>

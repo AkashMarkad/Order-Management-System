@@ -11,9 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Shop 1"
-        android:textSize="@dimen/_20ssp"
+        android:textSize="@dimen/_15ssp"
         android:textColor="@color/white"
-        android:paddingStart="20dp"
+        android:gravity="center"
         android:paddingTop="10dp"
         android:layout_weight="1"
         android:paddingBottom="10dp"/>
@@ -22,13 +22,13 @@
         android:id="@+id/OPValue1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        android:gravity="center"
         android:text="4 OP"
         android:layout_weight="1"
         android:textColor="@color/white"
-        android:textSize="@dimen/_20ssp">
+        android:textSize="@dimen/_15ssp">
         <requestFocus />
     </TextView>
 
