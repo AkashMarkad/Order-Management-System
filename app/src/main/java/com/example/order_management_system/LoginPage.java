@@ -2,6 +2,7 @@ package com.example.order_management_system;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,14 +12,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.regex.Pattern;
-
-public class Login extends AppCompatActivity implements View.OnClickListener {
+public class LoginPage extends AppCompatActivity implements View.OnClickListener {
 
     private EditText companyIdEditText, usernameEditText, passwordEditText;
     private Button loginButton;
-    private TextView forgotPasswordTextView;
+    private TextView forgotPasswordTextView, signupTextView;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +29,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         passwordEditText = findViewById(R.id.passwordEditText);
         loginButton = findViewById(R.id.loginButton);
         forgotPasswordTextView = findViewById(R.id.forgotPasswordTextView);
+        signupTextView =  findViewById(R.id.signupTextView);
 
         loginButton.setOnClickListener(this);
         forgotPasswordTextView.setOnClickListener(this);
+        signupTextView.setOnClickListener(this);
 
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -41,7 +45,14 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             validateLogin();
         } else if (v == forgotPasswordTextView) {
             forgotPassword();
+        } else if (v == signupTextView) {
+            signUp();
         }
+    }
+
+    private void signUp() {
+        Intent intent = new Intent(getApplicationContext(),RegistrationPage.class);
+        startActivity(intent);
     }
 
     private void validateLogin() {
@@ -67,20 +78,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if (isValidPassword(password)) {
             // login successful
             Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(Login.this , MainActivity.class));
+            startActivity(new Intent(LoginPage.this , MainActivity.class));
         } else {
             // display error message
             Toast.makeText(this , "Login failed", Toast.LENGTH_SHORT).show();
 
         }
-
-
-
     }
 
     private void forgotPassword() {
-        // Implement your forgot password logic here
-        // ...
 
         Toast.makeText(this, "Forgot password clicked", Toast.LENGTH_SHORT).show();
     }
