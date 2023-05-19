@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayProductActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/image_10" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5ssp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity "
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_15sdp">
+
+                        <Button
+                            android:id="@+id/decreaseButton"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="-"
+                            android:textSize="@dimen/_15ssp"
+                            android:backgroundTint="@color/violet"
+                            android:textAllCaps="false"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"/>
+
+                        <EditText
+                            android:id="@+id/quantityEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="0"
+                            android:textSize="@dimen/_15ssp"
+                            android:paddingHorizontal="8dp" />
+
+                        <Button
+                            android:id="@+id/increaseButton"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="+"
+                            android:textSize="@dimen/_15ssp"
+                            android:backgroundTint="@color/violet"
+                            android:textAllCaps="false"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

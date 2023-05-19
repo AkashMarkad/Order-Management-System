@@ -3,12 +3,14 @@ package com.example.order_management_system;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 public class OrderPage extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class OrderPage extends AppCompatActivity {
         }
         else if (id==R.id.gallery) {
             Toast.makeText(getApplicationContext(),"clicked on gallery", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), GallaryActivity.class));
         }
 
         return true;
