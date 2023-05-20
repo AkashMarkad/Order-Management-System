@@ -27,4 +27,10 @@
         android:id="@+id/temp3"
         android:text="Login Activity"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp4"
+        android:text="Shipping Product Activity"/>
+
 </LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ShippingProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/violet"
+                android:padding="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <!-- Shipping Address Fields -->
+                <EditText
+                    android:id="@+id/editTextAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Shipping Address"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/off_white"
+                    android:textSize="@dimen/_15ssp"/>
+
+                <EditText
+                    android:id="@+id/editTextLandmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Landmark"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/off_white"
+                    android:textSize="@dimen/_15ssp"/>
+
+                <EditText
+                    android:id="@+id/editTextPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/off_white"
+                    android:textSize="@dimen/_15ssp"/>
+            </LinearLayout>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp">
+
+                <Button
+                    android:id="@+id/buttonPlaceOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Place Order"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:backgroundTint="@color/violet"/>
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:backgroundTint="@color/violet"/>
+
+                <Button
+                    android:id="@+id/buttonHome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Home"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:backgroundTint="@color/violet"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

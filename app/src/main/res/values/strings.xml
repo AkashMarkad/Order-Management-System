@@ -71,7 +71,7 @@
     <string name="order_number">Order Number</string>
     <string name="eg_order_no">eg. gld1234</string>
     <string name="order_date">Order Date</string>
-    <string name="eg_date">eg. 01/01/1999</string>
+    <string name="eg_date"> 01/01/1999</string>
     <string name="btn_proceed_to_gallery">Proceed to Gallery</string>
 
     <string-array name="partyType">

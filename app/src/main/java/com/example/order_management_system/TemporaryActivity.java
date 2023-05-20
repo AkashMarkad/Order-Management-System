@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class TemporaryActivity extends AppCompatActivity {
 
-    private Button temp1, temp2, temp3;
+    private Button temp1, temp2, temp3 , temp4;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -21,6 +21,7 @@ public class TemporaryActivity extends AppCompatActivity {
         temp1 =  findViewById(R.id.temp1);
         temp2 =  findViewById(R.id.temp2);
         temp3 =  findViewById(R.id.temp3);
+        temp4 =  findViewById(R.id.temp4);
 
         temp1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,5 +46,14 @@ public class TemporaryActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        temp4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ShippingProductActivity.class));
+            }
+        });
+
+
     }
 }
