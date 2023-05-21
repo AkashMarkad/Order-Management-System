@@ -2,18 +2,21 @@ package com.example.order_management_system;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class DisplayProductActivity extends AppCompatActivity {
 
     private ImageView imageView;
-    private Button decreaseButton , increaseButton;
-    private EditText quantityEditText;
+    private Button decreaseButton , increaseButton, btnAddToCart;
+    private TextView tvQuantity;
+    private int quantity = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +26,8 @@ public class DisplayProductActivity extends AppCompatActivity {
         imageView = findViewById(R.id.image);
         decreaseButton = findViewById(R.id.decreaseButton);
         increaseButton = findViewById(R.id.increaseButton);
-        quantityEditText = findViewById(R.id.quantityEditText);
+        tvQuantity = findViewById(R.id.tvQuantity);
+        btnAddToCart = findViewById(R.id.btnAddToCart);
 
         Intent intent = getIntent();
 
@@ -32,21 +36,31 @@ public class DisplayProductActivity extends AppCompatActivity {
         decreaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int quantity = Integer.parseInt(quantityEditText.getText().toString());
-                if (quantity > 0) {
-                    quantity--;
-                    quantityEditText.setText(String.valueOf(quantity));
-                }
+                decreaseQuantity();
             }
         });
 
         increaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int quantity = Integer.parseInt(quantityEditText.getText().toString());
-                quantity++;
-                quantityEditText.setText(String.valueOf(quantity));
+                increaseQuantity();
             }
         });
+    }
+
+    private void decreaseQuantity() {
+        if (quantity > 0) {
+            quantity--;
+            updateQuantity();
+        }
+    }
+
+    private void increaseQuantity() {
+        quantity++;
+        updateQuantity();
+    }
+
+    private void updateQuantity() {
+        tvQuantity.setText(String.valueOf(quantity));
     }
 }

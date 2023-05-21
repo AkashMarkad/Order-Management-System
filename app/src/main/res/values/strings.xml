@@ -132,6 +132,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="signup">Not yet registered? SignUp Now</string>
     <string name="forget_password">Forget Password?</string>
+    <string name="qty">Qty</string>
 
 
 </resources>

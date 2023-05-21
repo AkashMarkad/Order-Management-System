@@ -37,9 +37,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ProductsGalleryActivity"
-            android:exported="false" />
-        <activity
             android:name=".TemporaryActivity"
             android:exported="true">
             <intent-filter>
