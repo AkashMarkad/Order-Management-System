@@ -133,6 +133,7 @@
     <string name="signup">Not yet registered? SignUp Now</string>
     <string name="forget_password">Forget Password?</string>
     <string name="qty">Qty</string>
+    <string name="select_date">Select Date</string>
 
 
 </resources>
