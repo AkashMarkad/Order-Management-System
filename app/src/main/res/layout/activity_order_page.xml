@@ -29,15 +29,24 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15ssp"/>
 
-            <EditText
+<!--            <EditText-->
+<!--                android:id="@+id/order_number_value"-->
+<!--                android:layout_width="@dimen/_130sdp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:hint="@string/eg_order_no"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textColorHint="@color/off_white"-->
+<!--                android:textSize="@dimen/_15ssp"/>-->
+
+            <TextView
                 android:id="@+id/order_number_value"
                 android:layout_width="@dimen/_130sdp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/eg_order_no"
-                android:textColor="@color/white"
-                android:textColorHint="@color/off_white"
-                android:textSize="@dimen/_15ssp"/>
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"/>
+
 
         </LinearLayout>
 

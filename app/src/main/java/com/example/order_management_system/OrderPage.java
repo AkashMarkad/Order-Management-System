@@ -3,6 +3,7 @@ package com.example.order_management_system;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,15 +13,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.UUID;
 
 import java.util.Calendar;
 
 public class OrderPage extends AppCompatActivity {
 
     private Button btnProceedToGallery;
-    private TextView order_number, order_date;
-    private EditText order_number_value, order_date_value;
+    private TextView order_number, order_date, order_number_value;
+    private EditText  order_date_value;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +35,13 @@ public class OrderPage extends AppCompatActivity {
         order_date_value = findViewById(R.id.order_date_value);
         btnProceedToGallery = findViewById(R.id.btnProceedToGallery);
 
+        // setting the UUID to textview
+        Order order = new Order();  // Create an instance of the Order class
+        String orderNumber = order.getOrderNumber();  // Get the order number
+        order_number_value.setText(orderNumber);  // Set the order number to the TextView
 
+
+        // current date for order number
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH) + 1;
@@ -50,6 +59,29 @@ public class OrderPage extends AppCompatActivity {
         });
 
     }
+
+        //order class for auto generated UUIDs for order numbers
+    public class Order {
+        private String orderNumber;
+        // Other order properties and methods
+
+        public Order() {
+            // Generate a unique order number using UUID
+            this.orderNumber = generateOrderNumber();
+        }
+
+        private String generateOrderNumber() {
+            String uuid = UUID.randomUUID().toString();;
+            String formattedOrderNumber = "OD" + uuid.substring(0, 8).toUpperCase();
+            return formattedOrderNumber;
+        }
+
+        public  String getOrderNumber() {
+            return orderNumber;
+        }
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
