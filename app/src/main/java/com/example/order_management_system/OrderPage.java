@@ -53,8 +53,7 @@ public class OrderPage extends AppCompatActivity {
         btnProceedToGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =  new Intent(getApplicationContext(), GallaryActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), ProductGalleryActivity.class));
             }
         });
 
@@ -100,7 +99,7 @@ public class OrderPage extends AppCompatActivity {
         }
         else if (id==R.id.gallery) {
             Toast.makeText(getApplicationContext(),"clicked on gallery", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(getApplicationContext(), GallaryActivity.class));
+            startActivity(new Intent(getApplicationContext(), ProductGalleryActivity.class));
         }
 
         return true;

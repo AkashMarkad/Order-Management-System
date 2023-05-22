@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSelectedProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_products"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp" />
+
+    <View
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:background="@color/orange"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSelectedProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+<!--        <Button-->
+<!--            android:id="@+id/btnRemoveOrAddItems"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Remove Or Add Items"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="@dimen/_15ssp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginEnd="@dimen/_12sdp"-->
+<!--            android:backgroundTint="@color/violet"/>-->
+
+        <Button
+            android:id="@+id/btnConfirmAndProceed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirm_amp_proceed"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:backgroundTint="@color/violet"/>
+    </LinearLayout>
+
+</LinearLayout>

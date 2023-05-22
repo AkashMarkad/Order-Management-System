@@ -23,6 +23,7 @@
     <string name="making_rate_w">Making Rate (W)</string>
     <string name="_new">New</string>
     <string name="save_amp_proceed"><![CDATA[Save & Proceed]]></string>
+    <string name="confirm_amp_proceed"><![CDATA[Confirm & Proceed]]></string>
 
     <!--    Figure 2 String Values -->
     <string name="product_name_amp_qr_code"><![CDATA[Product Name & QR Code]]></string>
@@ -134,6 +135,8 @@
     <string name="forget_password">Forget Password?</string>
     <string name="qty">Qty</string>
     <string name="select_date">Select Date</string>
+    <string name="quantity_left_0">Quantity Left: 0</string>
+    <string name="selected_products">Selected Products</string>
 
 
 </resources>
