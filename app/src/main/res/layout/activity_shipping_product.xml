@@ -25,29 +25,50 @@
                 android:orientation="vertical">
 
                 <!-- Shipping Address Fields -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shipping_address"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/white"/>
+
                 <EditText
                     android:id="@+id/editTextAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Shipping Address"
+                    android:hint="@string/address_field"
                     android:textColor="@color/white"
                     android:textColorHint="@color/off_white"
                     android:textSize="@dimen/_15ssp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/landmark"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/white"/>
 
                 <EditText
                     android:id="@+id/editTextLandmark"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Landmark"
+                    android:hint="@string/landmark"
                     android:textColor="@color/white"
                     android:textColorHint="@color/off_white"
                     android:textSize="@dimen/_15ssp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pincode"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/white"/>
 
                 <EditText
                     android:id="@+id/editTextPincode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Pincode"
+                    android:hint="@string/pincode"
                     android:inputType="number"
                     android:textColor="@color/white"
                     android:textColorHint="@color/off_white"
@@ -57,46 +78,40 @@
             <!-- Buttons -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_50sdp"
+                android:paddingBottom="@dimen/_50sdp"
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/buttonPlaceOrder"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Place Order"
                     android:textAllCaps="false"
                     android:textSize="@dimen/_15ssp"
                     android:textColor="@color/white"
-                    android:layout_marginEnd="@dimen/_12sdp"
                     android:backgroundTint="@color/violet"/>
 
                 <Button
                     android:id="@+id/buttonCancel"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Cancel"
                     android:textAllCaps="false"
                     android:textSize="@dimen/_15ssp"
                     android:textColor="@color/white"
-                    android:layout_marginEnd="@dimen/_12sdp"
                     android:backgroundTint="@color/violet"/>
 
                 <Button
                     android:id="@+id/buttonHome"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Home"
                     android:textAllCaps="false"
                     android:textSize="@dimen/_15ssp"
                     android:textColor="@color/white"
-                    android:layout_marginEnd="@dimen/_12sdp"
                     android:backgroundTint="@color/violet"/>
             </LinearLayout>
 

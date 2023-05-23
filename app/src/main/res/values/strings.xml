@@ -137,6 +137,10 @@
     <string name="select_date">Select Date</string>
     <string name="quantity_left_0">Quantity Left: 0</string>
     <string name="selected_products">Selected Products</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="address_field">House No., Area, Colony, City</string>
+    <string name="landmark">Landmark</string>
+    <string name="pincode">Pincode</string>
 
 
 </resources>
