@@ -2,18 +2,21 @@ package com.example.order_management_system;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.PopupMenu;
 
 public class Product implements Parcelable {
     private int imageRes;
     private int quantityLeft;
     private boolean isSelected;
-
     public Product(int imageRes, int quantityLeft) {
         this.imageRes = imageRes;
         this.quantityLeft = quantityLeft;
         this.isSelected = false;
     }
-
     public int getImageRes() {
         return imageRes;
     }

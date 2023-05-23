@@ -65,7 +65,7 @@ public class OrderPage extends AppCompatActivity {
         // Other order properties and methods
 
         public Order() {
-            // Generate a unique order number using UUID
+            // Generates a unique order number using UUID
             this.orderNumber = generateOrderNumber();
         }
 
