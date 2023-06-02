@@ -42,19 +42,20 @@ public class ShippingProductActivity extends AppCompatActivity {
                     shippingAddress.setError("Please enter Address");
                     return;
                 }
-
-                if(TextUtils.isEmpty(landmark)){
+                else if(TextUtils.isEmpty(landmark)){
                     landMark.setError("Please enter your landmark");
                     return;
                 }
-
-                if(TextUtils.isEmpty(pin)){
+                else if(TextUtils.isEmpty(pin)){
                     pinCode.setError("Please enter your pinCode");
                     return;
                 }
-
-                if(!isValidPinCode(pin)){
+                else if(!isValidPinCode(pin)){
                     pinCode.setError("Please enter valid pinCode");
+                }
+                else{
+                    //Go to the next page
+
                 }
             }
         });

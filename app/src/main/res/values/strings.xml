@@ -106,19 +106,16 @@
     </string-array>
 
     <string-array name="minStockUnits">
-        <item>Unit</item>
         <item>gms</item>
         <item>kg</item>
     </string-array>
 
     <string-array name="MakingRateRUnits">
-        <item>Unit</item>
         <item>gms</item>
         <item>kg</item>
     </string-array>
 
     <string-array name="MakingRateWUnits">
-        <item>Unit</item>
         <item>gms</item>
         <item>kg</item>
     </string-array>
