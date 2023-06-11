@@ -10,8 +10,10 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,10 +26,23 @@ public class ProductNameAndQRCode extends AppCompatActivity {
     Button New , Savebtn , PrintQR;
     TextView camera , gallery;
     ImageView imageView;
+
+    EditText quantityValue , weightValue, lessWeightValue, addWeightValue, netWeightValue, saleLessWeightValue, itemSizeValue, hallMarkValue;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_product_name_and_qrcode);
+
+        quantityValue = findViewById(R.id.quantityValue);
+        weightValue = findViewById(R.id.weightValue);
+        lessWeightValue = findViewById(R.id.lessWeightValue);
+        addWeightValue = findViewById(R.id.addWeightValue);
+        netWeightValue = findViewById(R.id.netWeightValue);
+        saleLessWeightValue = findViewById(R.id.saleLessWeightValue);
+        itemSizeValue = findViewById(R.id.itemSizeValue);
+        hallMarkValue = findViewById(R.id.hallMarkValue);
+
         setContentView(R.layout.activity_product_name_and_qrcode);
         New = findViewById(R.id.btnNewProduct);
         Savebtn = findViewById(R.id.btnSaveProduct);
@@ -74,7 +89,53 @@ public class ProductNameAndQRCode extends AppCompatActivity {
         Savebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ProductNameAndQRCode.this,ProductDetailsActivity.class));
+
+                String quantityVal = quantityValue.getText().toString().trim();
+                String weightVal = weightValue.getText().toString().trim();
+                String lessWeightVal = lessWeightValue.getText().toString().trim();
+                String addWeightVal = addWeightValue.getText().toString().trim();
+                String netWeightVal = netWeightValue.getText().toString().trim();
+                String saleLessWeightVal = saleLessWeightValue.getText().toString().trim();
+                String itemSizeVal = itemSizeValue.getText().toString().trim();
+                String hallMarkVal = hallMarkValue.getText().toString().trim();
+
+//                if(TextUtils.isEmpty(quantityVal)){
+//                    quantityValue.setError("Please enter quantity value");
+//                    return ;
+//                }
+//                else if(TextUtils.isEmpty(weightVal)){
+//                    weightValue.setError("Please enter weight");
+//                    return ;
+//                }
+//                else if(TextUtils.isEmpty(lessWeightVal)){
+//                    lessWeightValue.setError("Please enter less weight value");
+//                    return ;
+//                }
+//                else if(TextUtils.isEmpty(addWeightVal)){
+//                    addWeightValue.setError("Please enter add weight value");
+//                    return ;
+//                }
+//                else if(TextUtils.isEmpty(netWeightVal)){
+//                    netWeightValue.setError("Please enter net weight value");
+//                    return ;
+//                }
+//                else if(TextUtils.isEmpty(saleLessWeightVal)){
+//                    saleLessWeightValue.setError("Please enter sale less weight value");
+//                    return ;
+//                }
+//                else if(TextUtils.isEmpty(itemSizeVal)){
+//                    itemSizeValue.setError("Please enter item size value");
+//                    return ;
+//                }
+//                else if(TextUtils.isEmpty(hallMarkVal)){
+//                    hallMarkValue.setError("Please enter hallMark value");
+//                    return ;
+//                }
+//                else {
+//                    startActivity(new Intent(ProductNameAndQRCode.this, ProductDetailsActivity.class));
+//                }
+
+                startActivity(new Intent(ProductNameAndQRCode.this , ProductDetailsActivity.class));
             }
         });
 
