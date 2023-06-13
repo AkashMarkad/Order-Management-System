@@ -83,6 +83,8 @@ public class LoginPage extends AppCompatActivity implements View.OnClickListener
             // display error message
             Toast.makeText(this , "Login failed", Toast.LENGTH_SHORT).show();
 
+            Toast.makeText(this , "Password should contains atleast 1 uppercase letter, 1 lowercase letter, 1 digit, 1 special character and length should be greater than or equal to 6.", Toast.LENGTH_SHORT).show();
+
         }
     }
 
