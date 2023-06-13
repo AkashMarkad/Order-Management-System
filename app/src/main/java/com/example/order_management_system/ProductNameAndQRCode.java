@@ -134,6 +134,8 @@ public class ProductNameAndQRCode extends AppCompatActivity {
                 else {
                     startActivity(new Intent(ProductNameAndQRCode.this, ProductDetailsActivity.class));
                 }
+
+                startActivity(new Intent(ProductNameAndQRCode.this , ProductDetailsActivity.class));
             }
         });
 
