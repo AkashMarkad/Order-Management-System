@@ -99,43 +99,41 @@ public class ProductNameAndQRCode extends AppCompatActivity {
                 String itemSizeVal = itemSizeValue.getText().toString().trim();
                 String hallMarkVal = hallMarkValue.getText().toString().trim();
 
-//                if(TextUtils.isEmpty(quantityVal)){
-//                    quantityValue.setError("Please enter quantity value");
-//                    return ;
-//                }
-//                else if(TextUtils.isEmpty(weightVal)){
-//                    weightValue.setError("Please enter weight");
-//                    return ;
-//                }
-//                else if(TextUtils.isEmpty(lessWeightVal)){
-//                    lessWeightValue.setError("Please enter less weight value");
-//                    return ;
-//                }
-//                else if(TextUtils.isEmpty(addWeightVal)){
-//                    addWeightValue.setError("Please enter add weight value");
-//                    return ;
-//                }
-//                else if(TextUtils.isEmpty(netWeightVal)){
-//                    netWeightValue.setError("Please enter net weight value");
-//                    return ;
-//                }
-//                else if(TextUtils.isEmpty(saleLessWeightVal)){
-//                    saleLessWeightValue.setError("Please enter sale less weight value");
-//                    return ;
-//                }
-//                else if(TextUtils.isEmpty(itemSizeVal)){
-//                    itemSizeValue.setError("Please enter item size value");
-//                    return ;
-//                }
-//                else if(TextUtils.isEmpty(hallMarkVal)){
-//                    hallMarkValue.setError("Please enter hallMark value");
-//                    return ;
-//                }
-//                else {
-//                    startActivity(new Intent(ProductNameAndQRCode.this, ProductDetailsActivity.class));
-//                }
-
-                startActivity(new Intent(ProductNameAndQRCode.this , ProductDetailsActivity.class));
+                if(TextUtils.isEmpty(quantityVal)){
+                    quantityValue.setError("Please enter quantity value");
+                 //   return ;
+                }
+                else if(TextUtils.isEmpty(weightVal)){
+                    weightValue.setError("Please enter weight");
+                   // return ;
+                }
+                else if(TextUtils.isEmpty(lessWeightVal)){
+                    lessWeightValue.setError("Please enter less weight value");
+                    //return ;
+                }
+                else if(TextUtils.isEmpty(addWeightVal)){
+                    addWeightValue.setError("Please enter add weight value");
+                   // return ;
+                }
+                else if(TextUtils.isEmpty(netWeightVal)){
+                    netWeightValue.setError("Please enter net weight value");
+                   // return ;
+                }
+                else if(TextUtils.isEmpty(saleLessWeightVal)){
+                    saleLessWeightValue.setError("Please enter sale less weight value");
+                   // return ;
+                }
+                else if(TextUtils.isEmpty(itemSizeVal)){
+                    itemSizeValue.setError("Please enter item size value");
+                    //return ;
+                }
+                else if(TextUtils.isEmpty(hallMarkVal)){
+                    hallMarkValue.setError("Please enter hallMark value");
+                  //  return ;
+                }
+                else {
+                    startActivity(new Intent(ProductNameAndQRCode.this, ProductDetailsActivity.class));
+                }
             }
         });
 
@@ -183,9 +181,23 @@ public class ProductNameAndQRCode extends AppCompatActivity {
 
             // Choose the smallest ratio as inSampleSize value, this will guarantee
             // a final image with both dimensions larger than or equal to the requested height and width.
-            inSampleSize = heightRatio < widthRatio ? heightRatio : widthRatio;
+            inSampleSize = Math.min(heightRatio, widthRatio);
         }
 
         return inSampleSize;
+    }
+
+    public boolean isValidNumber(String str){
+        try {
+            Float.parseFloat(str);
+            return true;
+        }catch (NumberFormatException e){
+            return false;
+        }
+    }
+
+    public boolean isValidPer(String str){
+        float num = Float.parseFloat(str);
+        return num >= 0.0 && num <= 100;
     }
 }
